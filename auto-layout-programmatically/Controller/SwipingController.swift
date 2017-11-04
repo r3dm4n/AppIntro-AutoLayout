@@ -70,6 +70,11 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
         collectionView?.isPagingEnabled = true
     }
     
+    override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let x = targetContentOffset.pointee.x
+        pageControl.currentPage = Int(x / view.frame.width)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }

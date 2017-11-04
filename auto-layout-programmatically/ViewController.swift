@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         let attributedText = NSMutableAttributedString(string: "Join us today in our fun and games", attributes: [NSAttributedStringKey.font
             : UIFont.boldSystemFont(ofSize: 18)])
         
-        attributedText.append(NSAttributedString(string: "\n\n\nAre you ready for loads and loads of fun ? Don't want any longer! We hope to see you in our stores soon", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 13), NSAttributedStringKey.foregroundColor: UIColor.gray]))
+        attributedText.append(NSAttributedString(string: "\n\n\nAre you ready for loads and loads of fun ? Don't wait any longer! We hope to see you in our stores soon", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 13), NSAttributedStringKey.foregroundColor: UIColor.gray]))
         
         textView.attributedText = attributedText
         textView.textAlignment = .center
@@ -75,7 +75,6 @@ class ViewController: UIViewController {
     }
     
     fileprivate func setupBottomControlls() {
-
         let bottomControlsStackView = UIStackView(arrangedSubviews: [previousButton, pageControl, nextButton])
         view.addSubview(bottomControlsStackView)
         bottomControlsStackView.translatesAutoresizingMaskIntoConstraints = false

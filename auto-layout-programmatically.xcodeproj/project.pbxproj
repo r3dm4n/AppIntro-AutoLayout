@@ -41,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE3B5F511FADE67200580C26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE08BB3B1FADCE7D003BC0FE /* Page.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE3B5F521FADE6EA00580C26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE08BB391FADC746003BC0FE /* PageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE3B5F531FADE6F900580C26 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE8D5FD51F87665F00548559 /* ViewController.swift */,
+				BE08BB371FADC2AA003BC0FE /* SwipingController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		BE8D5FC71F87665E00548559 = {
 			isa = PBXGroup;
 			children = (
@@ -60,10 +85,9 @@
 		BE8D5FD21F87665E00548559 /* auto-layout-programmatically */ = {
 			isa = PBXGroup;
 			children = (
-				BE08BB3B1FADCE7D003BC0FE /* Page.swift */,
-				BE08BB391FADC746003BC0FE /* PageCell.swift */,
-				BE8D5FD51F87665F00548559 /* ViewController.swift */,
-				BE08BB371FADC2AA003BC0FE /* SwipingController.swift */,
+				BE3B5F531FADE6F900580C26 /* Controller */,
+				BE3B5F521FADE6EA00580C26 /* View */,
+				BE3B5F511FADE67200580C26 /* Model */,
 				BE8D5FD31F87665E00548559 /* AppDelegate.swift */,
 				BE8D5FD71F87665F00548559 /* Main.storyboard */,
 				BE8D5FDA1F87665F00548559 /* Assets.xcassets */,

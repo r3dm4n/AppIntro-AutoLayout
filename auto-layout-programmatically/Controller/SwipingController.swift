@@ -11,9 +11,9 @@ import UIKit
 class SwipingController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let pages = [
-        Page(imageName: "bear_first", headerText: "Join us today in our fun and games"),
-        Page(imageName: "heart_second", headerText: "Subscribe to get coupons on your daily events"),
-        Page(imageName: "leaf_third", headerText: "VIP members special services")
+        Page(imageName: "bear_first", headerText: "Join use today in our fun and games!", bodyText: "Are you ready for loads and loads of fun? Don't wait any longer! We hope to see you in our stores soon."),
+        Page(imageName: "heart_second", headerText: "Subscribe and get coupons on our daily events", bodyText: "Get notified of the savings immediately when we announce them on our website. Make sure to also give us any feedback you have."),
+        Page(imageName: "leaf_third", headerText: "VIP members special services", bodyText: "Some more body text here")
     ]
     
     override func viewDidLoad() {
@@ -34,8 +34,8 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! PageCell
         let page = pages[indexPath.item]
-        cell.bearImageView.image = UIImage(named: page.imageName)
-        cell.descriptionTextView.text = page.headerText
+        cell.page = page
+        
         return cell
     }
     

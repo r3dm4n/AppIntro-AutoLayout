@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE08BB381FADC2AA003BC0FE /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE08BB371FADC2AA003BC0FE /* SwipingController.swift */; };
 		BE8D5FD41F87665E00548559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D5FD31F87665E00548559 /* AppDelegate.swift */; };
 		BE8D5FD61F87665F00548559 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D5FD51F87665F00548559 /* ViewController.swift */; };
 		BE8D5FD91F87665F00548559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8D5FD71F87665F00548559 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE08BB371FADC2AA003BC0FE /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		BE8D5FD01F87665E00548559 /* auto-layout-programmatically.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "auto-layout-programmatically.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE8D5FD31F87665E00548559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE8D5FD51F87665F00548559 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				BE8D5FD31F87665E00548559 /* AppDelegate.swift */,
 				BE8D5FD51F87665F00548559 /* ViewController.swift */,
+				BE08BB371FADC2AA003BC0FE /* SwipingController.swift */,
 				BE8D5FD71F87665F00548559 /* Main.storyboard */,
 				BE8D5FDA1F87665F00548559 /* Assets.xcassets */,
 				BE8D5FDC1F87665F00548559 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				BE8D5FD61F87665F00548559 /* ViewController.swift in Sources */,
 				BE8D5FD41F87665E00548559 /* AppDelegate.swift in Sources */,
+				BE08BB381FADC2AA003BC0FE /* SwipingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

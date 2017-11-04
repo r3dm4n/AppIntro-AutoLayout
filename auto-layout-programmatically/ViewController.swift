@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     private let nextButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("NEXT  ", for: .normal)
+        button.setTitle("NEXT", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         button.setTitleColor(.mainPink, for: .normal)
         
@@ -63,6 +63,7 @@ class ViewController: UIViewController {
         pc.currentPage = 0
         pc.numberOfPages = 4
         pc.pageIndicatorTintColor = .mainPink
+        pc.currentPageIndicatorTintColor = .gray
         return pc
     }()
     

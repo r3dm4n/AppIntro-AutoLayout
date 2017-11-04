@@ -58,14 +58,14 @@
 		BE8D5FD21F87665E00548559 /* auto-layout-programmatically */ = {
 			isa = PBXGroup;
 			children = (
-				BE8D5FD31F87665E00548559 /* AppDelegate.swift */,
+				BE08BB391FADC746003BC0FE /* PageCell.swift */,
 				BE8D5FD51F87665F00548559 /* ViewController.swift */,
 				BE08BB371FADC2AA003BC0FE /* SwipingController.swift */,
+				BE8D5FD31F87665E00548559 /* AppDelegate.swift */,
 				BE8D5FD71F87665F00548559 /* Main.storyboard */,
 				BE8D5FDA1F87665F00548559 /* Assets.xcassets */,
 				BE8D5FDC1F87665F00548559 /* LaunchScreen.storyboard */,
 				BE8D5FDF1F87665F00548559 /* Info.plist */,
-				BE08BB391FADC746003BC0FE /* PageCell.swift */,
 			);
 			path = "auto-layout-programmatically";
 			sourceTree = "<group>";

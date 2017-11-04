@@ -22,9 +22,16 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
         button.setTitle("PREVIOUS", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         button.setTitleColor(.mainPink, for: .normal)
-        
+        button.addTarget(self, action: #selector(handlePrevious), for: .touchUpInside)
         return button
     }()
+    
+    @objc private func handlePrevious() {
+        let previousIndex = max(pageControl.currentPage - 1, 0)
+        let indexPath = IndexPath(item: previousIndex, section: 0)
+        pageControl.currentPage = previousIndex
+        collectionView?.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+    }
     
     private let nextButton: UIButton = {
         let button = UIButton(type: .system)
@@ -38,13 +45,16 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
     }()
     
     @objc private func handleNext() {
-        print(123)
+        let nextIndex = min(pageControl.currentPage + 1, pages.count - 1)
+        let indexPath = IndexPath(item: nextIndex, section: 0)
+        pageControl.currentPage = nextIndex
+        collectionView?.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
     
-    private let pageControl: UIPageControl = {
+    private lazy var pageControl: UIPageControl = {
         let pc = UIPageControl()
         pc.currentPage = 0
-        pc.numberOfPages = 4
+        pc.numberOfPages = pages.count
         pc.pageIndicatorTintColor = .mainPink
         pc.currentPageIndicatorTintColor = .gray
         return pc

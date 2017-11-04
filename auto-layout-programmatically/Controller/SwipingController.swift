@@ -95,6 +95,15 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
         return CGSize(width: view.frame.width, height: view.frame.height)
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        coordinator.animate(alongsideTransition: { (_) in
+            self.collectionViewLayout.invalidateLayout()
+            let indexPath = IndexPath(item: self.pageControl.currentPage, section: 0)
+            self.collectionView?.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        }) { (_) in
+        }
+    }
+    
     fileprivate func setupBottomControlls() {
         let bottomControlsStackView = UIStackView(arrangedSubviews: [previousButton, pageControl, nextButton])
         bottomControlsStackView.translatesAutoresizingMaskIntoConstraints = false
